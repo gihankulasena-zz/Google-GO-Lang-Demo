@@ -1,0 +1,8 @@
+{{template "header" .Title}}
+	<h1>Index Page</h1>
+	<ul>
+		{{range .Posts}}
+		<li>{{.Id}} {{.Title}}</li>
+		{{end}}
+	</ul>
+{{template "footer"}}
